@@ -1,0 +1,35 @@
+{
+  "name": "nasatinder",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "log": "adb logcat *:S ReactNative:V ReactNativeJS:V",
+    "android": "react-native run-android",
+    "android-r": "cd ./android && ./gradlew assembleRelease",
+    "emul": "~/Android/Sdk/emulator/emulator -avd Nexus_5X_API_26 &",
+    "prettier": "prettier --write `find js -name \"*.js\"`"
+  },
+  "dependencies": {
+    "moment": "^2.24.0",
+    "prettier": "^1.16.4",
+    "react": "16.6.3",
+    "react-native": "0.58.3",
+    "react-native-gesture-handler": "^1.0.15",
+    "react-native-interactive-image-gallery": "^0.1.2",
+    "react-native-swipe-cards": "^0.1.1",
+    "react-native-vector-icons": "^6.2.0",
+    "react-navigation": "^3.1.4"
+  },
+  "devDependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "24.1.0",
+    "jest": "24.1.0",
+    "metro-react-native-babel-preset": "0.51.1",
+    "react-test-renderer": "16.6.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
